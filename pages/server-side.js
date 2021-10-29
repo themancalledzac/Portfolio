@@ -73,7 +73,7 @@ export default function Home({ countries }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const { data } = await client.query({
     query: gql`
       query Countries {
@@ -88,7 +88,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      countries: data.countries.slice(0, 4),
+      countries: data.countries.slice(0, 20),
     },
   };
 }
