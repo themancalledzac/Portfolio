@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-export default function Home({ countries }) {
+export default function Home({ images }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -24,8 +24,8 @@ export default function Home({ countries }) {
         </p>
 
         <div className={styles.grid}>
-          {countries.map((country) => (
-            <div key={country.code} className={styles.card}>
+          {images.map((image) => (
+            <div key={image.title} className={styles.card}>
               <h3>
                 <a
                   href='#country-name'
@@ -47,10 +47,10 @@ export default function Home({ countries }) {
                     ></path>
                   </svg>
                 </a>
-                {country.name}
+                {images.author}
               </h3>
               <p>
-                {country.code} - {country.emoji}
+                {image.title} - {image.location}
               </p>
             </div>
           ))}
@@ -76,19 +76,32 @@ export default function Home({ countries }) {
 export async function getStaticProps() {
   const { data } = await client.query({
     query: gql`
-      query Countries {
-        countries {
-          code
-          name
-          emoji
+      query Photography {
+        images {
+          author
+          title
+          location
         }
       }
     `,
   });
 
+  // export async function getStaticProps() {
+  //   const { data } = await client.query({
+  //     query: gql`
+  //       query Countries {
+  //         countries {
+  //           code
+  //           name
+  //           emoji
+  //         }
+  //       }
+  //     `,
+  //   });
+
   return {
     props: {
-      countries: data.countries.slice(0, 4),
+      images: data.images,
     },
   };
 }
