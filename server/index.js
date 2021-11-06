@@ -1,12 +1,16 @@
-const { ApolloServer, gql } = require("apollo-server");
-
+import { ApolloServer, gql } from "apollo-server";
+import images from "./dummy_images_db.js";
 // here is our graphql schema definition.
 
 const typeDefs = gql`
   type Image {
     title: String
     author: String
+    country: String
+    state: String
     location: String
+    google_maps: String
+    image_url: String
   }
 
   type Query {
@@ -16,18 +20,18 @@ const typeDefs = gql`
 
 // Here is our definition of our data set (i'd assume this is the same as our seed data?)
 
-const images = [
-  {
-    title: "Tara testing",
-    author: "Zechariah Edens",
-    location: "Seattle",
-  },
-  {
-    title: "Tara testing 2",
-    author: "Zechariah Edens",
-    location: "Seattle",
-  },
-];
+// const images = [
+//   {
+//     title: "Tara testing",
+//     author: "Zechariah Edens",
+//     location: "Seattle",
+//   },
+//   {
+//     title: "Tara testing 2",
+//     author: "Zechariah Edens",
+//     location: "Seattle",
+//   },
+// ];
 
 // Here we define a resolver
 // Our data set is defined as above, but Apollo Server doesn't know that it should USE that data et when it's executing a query. to fix this, we create a resolver
