@@ -79,7 +79,8 @@ This portfolio represents a new project focused on moving my current portfolio i
   - This could simply be zacedens.com/admin
   - On log in, we have the ability to post a blog post.
   - We should be able to simply upload an image. This is an interesting subject, because when we upload an image to the database, we almost want to be abl to translate, or update that image into two parts, first is a compressed, but full size image that is displayed when on the website we click 'larger'. The other would be the thumbnail image. Basically, we need to do some javascript where we, when uploading, HIGHLY compress, and turn our image into a second, smaller image. woaahhh
-  -
+  - Thoughts
+    - Blog should be short trips, triptiks, 
 
 ## Questions
 
