@@ -7,6 +7,7 @@ const typeDefs = gql`
     title: String
     author: String
     country: String
+    direction: String
     location: String
     googleMaps: String
     imageUrl: String
@@ -22,10 +23,12 @@ const typeDefs = gql`
       title: String!
       author: String!
       country: String!
+      direction: String!
       location: String!
       googleMaps: String!
       imageUrl: String!
     ): Image
+    removeImage(imageId: ID!): Image
   }
 `;
 

@@ -15,6 +15,11 @@ const imageSchema = new Schema({
     required: true,
     default: "USA",
   },
+  direction: {
+    type: String,
+    required: true,
+    default: "Horizontal",
+  },
   location: {
     type: String,
     required: true,

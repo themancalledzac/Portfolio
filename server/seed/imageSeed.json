@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Two bikes at sunset in the Badlands.",
+    "author": "Zechariah Edens",
+    "country": "USA",
+    "direction": "Horizontal",
+    "location": "The Badlands",
+    "googleMaps": "https://goo.gl/maps/bLo2i3qJKFfKon5C6",
+    "imageUrl":
+      "https://res.cloudinary.com/themancalledzac/image/upload/v1636067236/Portfolio/DSC_0028-Edit_amvgtk.jpg"
+  },
+  {
+    "title": "Tourists get an early lo.",
+    "author": "Zechariah Edens",
+    "country": "USA",
+    "direction": "Horizontal",
+    "location": "Arches National Park",
+    "googleMaps": "https://goo.gl/maps/R8Ewfe97NZVRgEQz6",
+    "imageUrl":
+      "https://res.cloudinary.com/themancalledzac/image/upload/v1636067236/Portfolio/DSC_0387-Pano_hlnamt.jpg"
+  },
+  {
+    "title": "Monument Valley with a cloud overlooking the natural splendor.",
+    "author": "Zechariah Edens",
+    "country": "USA",
+    "direction": "Vertical",
+    "location": "Monument Valley",
+    "googleMaps": "https://goo.gl/maps/MYGNzfMhH3kL1uJ49",
+    "imageUrl":
+      "https://res.cloudinary.com/themancalledzac/image/upload/v1636067237/Portfolio/DSC_0998_bpuozy.jpg"
+  }
+]
