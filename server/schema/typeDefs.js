@@ -13,7 +13,8 @@ const typeDefs = gql`
   }
 
   type Query {
-    getImages: [Image]
+    images: [Image]
+    image: [Image]
   }
 
   type Mutation {
