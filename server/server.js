@@ -2,17 +2,17 @@ const express = require("express");
 const { ApolloServer, gql } = require("apollo-server-express");
 const path = require("path");
 
+const { typeDefs, resolvers } = require("./schema");
 const db = require("./config/connection");
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3001;
+const app = express();
 
-const { typeDefs, resolvers } = require("./schema");
 const server = new ApolloServer({
   typeDefs,
   resolvers,
 });
 
-const app = express();
 server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
