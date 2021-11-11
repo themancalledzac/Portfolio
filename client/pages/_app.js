@@ -1,10 +1,15 @@
 import "../styles/globals.css";
-import { ApolloProvider } from "@apollo/client";
-import client from "../apollo-client";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+// import client from "../apollo-client";
 
-// In our _app.js file, we are setting up our 'client side'rendering. 
+const client = new ApolloClient({
+  uri: "http://localhost:3000/graphql",
+  cache: new InMemoryCache(),
+});
 
-function MyApp({ Component, pageProps }) {
+// In our _app.js file, we are setting up our 'client side'rendering.
+
+function App({ Component, pageProps }) {
   return (
     <ApolloProvider client={client}>
       <Component {...pageProps} />
@@ -12,4 +17,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default App;
