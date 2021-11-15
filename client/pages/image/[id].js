@@ -1,10 +1,7 @@
 import SingleImage from "../../components/SingleImage";
 
 export default function SinglePhotoPage({ query }) {
-  return (
-    <>
-      <div>current page for a single image</div>
-      <SingleImage _id='6189bd2f1bba572dfdc66207' />
-    </>
-  );
+  console.log(query);
+  if (query) return <SingleImage imageId={query._id} />;
+  return <SingleImage imageId='618ef9081145f3d874ba4cd6' />;
 }
