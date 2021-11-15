@@ -2,11 +2,10 @@ const { Image } = require("../models");
 
 const resolvers = {
   Query: {
-    images: async (parent,  ) => {
-
+    images: async (parent) => {
       return Image.find().sort({ createdAt: -1 });
     },
-    image: ({ imageId }) => {
+    image: async (parent, { imageId }) => {
       return Image.findOne({ _id: imageId });
     },
   },

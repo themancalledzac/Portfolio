@@ -3,7 +3,7 @@ const { gql } = require("apollo-server-express");
 // here is our graphql schema definition.
 const typeDefs = gql`
   type Image {
-    _id: ID!
+    _id: ID
     title: String
     author: String
     country: String
@@ -15,7 +15,7 @@ const typeDefs = gql`
 
   type Query {
     images: [Image]
-    image: [Image]
+    image(imageId: ID!): Image
   }
 
   type Mutation {
