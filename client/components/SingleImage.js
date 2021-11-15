@@ -1,33 +1,26 @@
 import { useQuery } from "@apollo/client";
 import gql from "graphql-tag";
+import { useEffect } from "react";
 import { SINGLE_PHOTO_QUERY } from "../utils/queries";
 
-// export const SINGLE_PHOTO_QUERY = gql`
-//   query image($_id: String) {
-//     image(_id: $_id) {
-//       title
-//       author
-//       direction
-//       location
-//       googleMaps
-//       imageUrl
-//     }
-//   }
-// `;
-
-export default function SingleImage({ id }) {
+export default function SingleImage({ imageId }) {
   const { data, loading, error } = useQuery(SINGLE_PHOTO_QUERY, {
     variables: {
-      id,
+      imageId,
     },
   });
+
+  useEffect(() => {
+    console.log("our use effect refreshing with new data yo");
+    console.log(data);
+  }, [data]);
+
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error...</p>;
-  const { Image } = data;
+  if (error) return `Error! ${error.message}`;
+
   return (
     <div>
-      <title>{Image.title}</title>
-      <img src={Image.imageUrl} alt='' />
+      <h1>{data.image.title}</h1>
     </div>
   );
 }
