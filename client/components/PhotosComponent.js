@@ -1,9 +1,10 @@
 import { useQuery } from "@apollo/client";
 import { useEffect } from "react";
 import { QUERY_IMAGES, SINGLE_PHOTO_QUERY } from "../utils/queries";
+import PhotoList from "./PhotoList";
 
-function PhotosComponent() {
-  const { error, loading, data } = useQuery(QUERY_IMAGES);
+const PhotosComponent = () => {
+  const { loading, data } = useQuery(QUERY_IMAGES);
 
   useEffect(() => {
     console.log(data);
@@ -11,15 +12,25 @@ function PhotosComponent() {
   }, [data]);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return `Error! ${error.message}`;
+  const images = data?.images || [];
+
   return (
     <div>
-      {data.images.map((image) => {
-        <p>{image.title}</p>;
-        <p>{image.author}</p>;
-      })}
+      {loading ? (
+        <div>Loading...</div>
+      ) : (
+        <PhotoList
+          images={images}
+          title={images.title}
+          author={images.author}
+          direction={images.direction}
+          location={images.location}
+          googleMaps={images.googleMaps}
+          imageUrl={images.imageUrl}
+        />
+      )}
     </div>
   );
-}
+};
 
 export default PhotosComponent;
