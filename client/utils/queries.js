@@ -16,16 +16,15 @@ export const QUERY_IMAGES = gql`
 `;
 
 export const SINGLE_PHOTO_QUERY = gql`
-  query image($id: ID!) {
-    query {
-      image(where: { id: $id }) {
-        title
-        author
-        direction
-        location
-        googleMaps
-        imageUrl
-      }
+  query getSingleImage($imageId: ID!) {
+    image(imageId: $imageId) {
+      _id
+      title
+      author
+      direction
+      location
+      googleMaps
+      imageUrl
     }
   }
 `;
