@@ -15,6 +15,7 @@ export default function Home() {
         <br></br>
         ... b. Photography
       </p>
+
     </div>
   );
 }

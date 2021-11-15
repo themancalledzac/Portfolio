@@ -141,3 +141,5 @@ yarn-error.log*
 
 # OLD SHIT
 index-old.js
+oldIndex.js
+config.js
