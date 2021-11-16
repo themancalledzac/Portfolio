@@ -10,16 +10,18 @@ const resolvers = {
     },
   },
   Mutation: {
-    addImage: ({ title, author, country, location, googleMaps, imageUrl }) => {
-      return Image.create({
-        title,
-        author,
-        country,
-        direction,
-        location,
-        googleMaps,
-        imageUrl,
-      });
+    addImage: async (parent, args) => {
+      const image = await Image.create(args);
+      return image;
+      // return Image.create({
+      //   title,
+      //   author,
+      //   country,
+      //   direction,
+      //   location,
+      //   googleMaps,
+      //   imageUrl,
+      // });
     },
     removeImage: ({ imageId }) => {
       return Image.findOneAndDelete({ _id: imageId });
