@@ -15,10 +15,39 @@ const imageSchema = new Schema({
     required: true,
     default: "USA",
   },
-  direction: {
+  date: {
     type: String,
     required: true,
-    default: "Horizontal",
+  },
+  aperture: {
+    type: String,
+    required: true,
+    default: "f4",
+  },
+  exposure_time: {
+    type: String,
+    required: true,
+    default: "1/60",
+  },
+  focal_length: {
+    type: Number,
+    required: true,
+    default: 70,
+  },
+  iso_speed: {
+    type: Number,
+    required: true,
+    default: 100,
+  },
+  lens: {
+    type: String,
+    required: true,
+    default: "NIKKOR Z 24-70mm f/4 S",
+  },
+  horizontal: {
+    type: Boolean,
+    required: true,
+    default: true,
   },
   location: {
     type: String,
@@ -30,6 +59,13 @@ const imageSchema = new Schema({
   imageUrl: {
     type: String,
     required: true,
+  },
+  people: [String],
+  keywords: [String],
+  image_category: {
+    type: String,
+    required: true,
+    default: "Landscape",
   },
 });
 

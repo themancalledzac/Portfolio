@@ -1,32 +1,86 @@
 [
   {
-    "title": "Two bikes at sunset in the Badlands.",
+    "title": "A bike heading into the sunset in the Badlands.",
     "author": "Zechariah Edens",
     "country": "USA",
-    "direction": "Horizontal",
+    "date": "2021-07-14",
+    "aperture": "f2.8",
+    "exposure_time": "1/160",
+    "focal_length": 70,
+    "iso_speed": 720,
+    "lens": "NIKKOR Z 70-200mm f/2.8 VR S",
+    "horizontal": false,
     "location": "The Badlands",
     "googleMaps": "https://goo.gl/maps/bLo2i3qJKFfKon5C6",
     "imageUrl":
-      "https://res.cloudinary.com/themancalledzac/image/upload/v1636067236/Portfolio/DSC_0028-Edit_amvgtk.jpg"
+      "https://res.cloudinary.com/themancalledzac/image/upload/v1636067236/Portfolio/DSC_0028-Edit_amvgtk.jpg",
+    "people": [], 
+    "keywords" : [
+      "Badlands", "National Park", "Nikon", "Mirrorless", "motorcycle", "sunset"
+    ],
+    "image_category": "Landscape"
   },
   {
-    "title": "Tourists get an early lo.",
+    "title": "Two Bikes heading into the sunset in the Badlands.",
     "author": "Zechariah Edens",
     "country": "USA",
-    "direction": "Horizontal",
+    "date": "2021-07-14",
+    "aperture": "f2.8",
+    "exposure_time": "1/160",
+    "focal_length": 70,
+    "iso_speed": 640,
+    "lens": "NIKKOR Z 70-200mm f/2.8 VR S",
+    "horizontal": true,
+    "location": "The Badlands",
+    "googleMaps": "https://goo.gl/maps/bLo2i3qJKFfKon5C6",
+    "imageUrl":
+      "https://res.cloudinary.com/themancalledzac/image/upload/v1636067236/Portfolio/DSC_0009_oj1nn7.jpg",
+    "people": [], 
+    "keywords" : [
+      "Badlands", "National Park", "Nikon", "Mirrorless", "motorcycle", "sunset" 
+    ],
+    "image_category": "Landscape"
+  },
+  {
+    "title": "Tourists get an early look at the Delicate Arch.",
+    "author": "Zechariah Edens",
+    "country": "USA",
+    "date": "2021-07-15",
+    "aperture": "f3.2",
+    "exposure_time": "1/200",
+    "focal_length": 70,
+    "iso_speed": 100,
+    "lens": "NIKKOR Z 70-200mm f/2.8 VR S",
+    "horizontal": true,
     "location": "Arches National Park",
     "googleMaps": "https://goo.gl/maps/R8Ewfe97NZVRgEQz6",
     "imageUrl":
-      "https://res.cloudinary.com/themancalledzac/image/upload/v1636067236/Portfolio/DSC_0387-Pano_hlnamt.jpg"
+      "https://res.cloudinary.com/themancalledzac/image/upload/v1636067236/Portfolio/DSC_0387-Pano_hlnamt.jpg",
+    "people": [],
+    "keywords": [
+        "Arches", "Arches National Park", "tourists", "Nikon", "mirrorless", "sunrise"
+    ],
+    "image_category": "Landscape"
   },
   {
     "title": "Monument Valley with a cloud overlooking the natural splendor.",
     "author": "Zechariah Edens",
     "country": "USA",
-    "direction": "Vertical",
+    "date": "2021-07-16",
+    "aperture": "f11",
+    "exposure_time": "1/500",
+    "focal_length": 200,
+    "iso_speed": 140,
+    "lens": "NIKKOR Z 70-200mm f/2.8 VR S",
+    "horizontal": false,
     "location": "Monument Valley",
     "googleMaps": "https://goo.gl/maps/MYGNzfMhH3kL1uJ49",
     "imageUrl":
-      "https://res.cloudinary.com/themancalledzac/image/upload/v1636067237/Portfolio/DSC_0998_bpuozy.jpg"
+      "https://res.cloudinary.com/themancalledzac/image/upload/v1636067237/Portfolio/DSC_0998_bpuozy.jpg",
+    "people": [],
+    "keywords": [
+        "Monument Valley", "clouds", "Nikon", "mirrorless"
+    ],
+    "image_category": "Landscape"
   }
 ]
