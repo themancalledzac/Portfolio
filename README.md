@@ -1,4 +1,4 @@
-<h1 align="center">Portfolio of Zechariah Edens</h1>
+<h1 align="center">New Portfolio Page located at: /themancalledzac/portfolio</h1>
 
 <p align="center">
     <img src="https://img.shields.io/github/repo-size/themancalledzac/portfolio" />
